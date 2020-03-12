@@ -49,4 +49,10 @@ Google Colab will ask you for an authorization of your google account. Click on 
 	df3 = pd.read_csv('insurance1.csv')
 	# Dataset is now stored in a Pandas Dataframe
 	df3
+	
+Google Colab will get the CSV data file from the link and read it in Pandas Dataframe. Now this data can be presented in a dataframe "df3". 
+
+Expected Output:
+![InsuranceData](InsuranceData.png)
+
 
