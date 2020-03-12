@@ -56,7 +56,7 @@ Google Colab will get the CSV data file from the link and read it in Pandas Data
 
 <img src="InsuranceData.png" width="225">
 
-## generate data-set
+## Generate data-set
 
 	x = df3.iloc[:, :-1].values
 	y = df3.iloc[:, 1].values
