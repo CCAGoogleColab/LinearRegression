@@ -54,6 +54,6 @@ Google Colab will get the CSV data file from the link and read it in Pandas Data
 
 ## Expected Output:
 
-![InsuranceData](InsuranceData.png =100*100)
+![InsuranceData](InsuranceData.png =100)
 
 
