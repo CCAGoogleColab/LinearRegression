@@ -9,6 +9,7 @@ In this lab, you’ll use a linear regression machine learning algorithm to esti
 	import pandas as pd
 	import numpy as np
 	import matplotlib.pyplot as plt
+	
 	from sklearn.linear_model import LinearRegression
 	from sklearn.model_selection import train_test_split 
 
@@ -33,3 +34,8 @@ In this lab, you’ll use a linear regression machine learning algorithm to esti
 	gauth = GoogleAuth()
 	gauth.credentials = GoogleCredentials.get_application_default()
 	drive = GoogleDrive(gauth)
+
+![Google Drive Authurization]()
+
+Google Colab will ask you for an authorization of your google account. Click on the link and sign in with your google account. Copy and paste the verification code inside the box and press enter.
+
