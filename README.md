@@ -42,8 +42,10 @@ Google Colab will ask you for an authorization of your google account. Click on 
 	link = 'https://drive.google.com/open?id=1z3c7mVRAr-h0tdxlMp1EYxG5pU74Aybb' # The shareable link
 	fluff, id = link.split('=')
 	# Verify that you have everything after '='
+	
 	downloaded = drive.CreateFile({'id':id}) 
 	downloaded.GetContentFile('insurance1.csv')  
+	
 	df3 = pd.read_csv('insurance1.csv')
 	# Dataset is now stored in a Pandas Dataframe
 	df3
