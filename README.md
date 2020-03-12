@@ -63,6 +63,7 @@ Google Colab will get the CSV data file from the link and read it in Pandas Data
 	
 x variable is the 2D array from the first column until the last column. In this case, it is only the BMI.
 y variable is the 2D array of the prediction variable. In this case, it is the index 1 element of the data column. 
+<img src="iloc.png" width="500">
 
 
 	X_train, X_test, y_train, y_test = train_test_split(x, y, test_size=1/3, random_state=0)
