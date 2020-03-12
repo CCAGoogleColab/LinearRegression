@@ -35,7 +35,7 @@ In this lab, you’ll use a linear regression machine learning algorithm to esti
 	gauth.credentials = GoogleCredentials.get_application_default()
 	drive = GoogleDrive(gauth)
 
-![Google Drive Authurization]()
+![Google Drive Authorization](GoogleDriveAuthorization.png)
 
 Google Colab will ask you for an authorization of your google account. Click on the link and sign in with your google account. Copy and paste the verification code inside the box and press enter.
 
