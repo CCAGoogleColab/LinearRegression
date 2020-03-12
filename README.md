@@ -54,5 +54,5 @@ Google Colab will get the CSV data file from the link and read it in Pandas Data
 
 ## Expected Output:
 
-<img src="InsuranceData.png" width="48">
+<img src="InsuranceData.png" width="500">
 
