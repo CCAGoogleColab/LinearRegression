@@ -34,11 +34,10 @@ In this lab, you’ll use a linear regression machine learning algorithm to esti
 	gauth = GoogleAuth()
 	gauth.credentials = GoogleCredentials.get_application_default()
 	drive = GoogleDrive(gauth)
+	
+Google Colab will ask you for an authorization of your google account. Click on the link and sign in with your google account. Copy and paste the verification code inside the box and press enter.
 
 <img src="GoogleDriveAuthorization.png" width="500">
-
-
-Google Colab will ask you for an authorization of your google account. Click on the link and sign in with your google account. Copy and paste the verification code inside the box and press enter.
 
 	link = 'https://drive.google.com/open?id=1z3c7mVRAr-h0tdxlMp1EYxG5pU74Aybb' # The shareable link
 	fluff, id = link.split('=')
@@ -56,4 +55,32 @@ Google Colab will get the CSV data file from the link and read it in Pandas Data
 ## Expected Output:
 
 <img src="InsuranceData.png" width="225">
+
+## generate data-set
+
+	x = df3.iloc[:, :-1].values
+	y = df3.iloc[:, 1].values
+	
+x variable is the 2D array from the first column until the last column. In this case, it is only the BMI.
+y variable is the 2D array of the prediction variable. In this case, it is the index 1 element of the data column. 
+
+
+	X_train, X_test, y_train, y_test = train_test_split(x, y, test_size=1/3, random_state=0)
+	# plot
+	def scatter():
+  		plt.scatter(X_test,y_test,s=1)
+  		plt.xlabel('BMI')
+  		plt.ylabel('Financial Insurance Charge')
+  		plt.title('Financial Insurance Charge with BMI')
+		
+	regression_model = LinearRegression()
+	regression_model.fit(X_train, y_train)
+	y_predicted = regression_model.predict(X_train)
+	scatter()
+	plt.plot(X_train, y_predicted, color='r')
+	plt.show()
+
+	prediction = float(input("Enter your BMI: "))
+	userpredict = regression_model.predict([[prediction]])
+	print(userpredict)
 
